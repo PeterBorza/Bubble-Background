@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/angry-eye.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>bubbles test server</title>
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <h1>Create your own bubble background</h1>
+
+    <div class="section">
+        <form class="form">
+            <label for="left">Left</label>
+            <span class="left-range">0%</span>
+            <input class="range" type="range" name="left" min="-100" max="100" value="0">
+            <label for="top">Top</label>
+            <span class="left-range">0%</span>
+            <input class="range" type="range" name="top" min="-100" max="100" value="0">
+            <label for="size">Size</label>
+            <span class="left-range">200rem</span>
+            <input class="range" type="range" name="size" min="0" max="400" value="200">
+            <label for="opacity">Opacity</label>
+            <span class="left-range">0.5</span>
+            <input class="range" type="range" name="opacity" min="0" max="1" step="0.01" value="0.5">
+            <button type="submit" class="createBtn">Create Bubble</button>
+            <hr>
+            <a href="/bubbles.html" target="blank">Go to Bubbles</a>
+        </form>
+        <div class="output">
+            <div class="left">
+                <p>Left</p>
+                <ol id="left-list"></ol>
+            </div>
+            <div class="top">
+                <p>Top</p>
+                <ol id="top-list"></ol>
+            </div>
+            <div class="size">
+                <p>Size</p>
+                <ol id="size-list"></ol>
+            </div>
+            <div class="opacity">
+                <p>Opacity</p>
+                <ol id="opacity-list"></ol>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
